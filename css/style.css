@@ -1,6 +1,8 @@
 /* Cross browser inline block*/
-ul#technologies{
+ul#technologies li:before{
+ content:'\ffed'; margin-right:0.5em;
 }
+
 ul#technologies li{
  width:10%;
  display: inline-block;
