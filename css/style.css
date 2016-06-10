@@ -1,6 +1,6 @@
 /* Cross browser inline block*/
 ul#technologies li:before{
- content:'\ffed'; margin-right:0.5em;
+ content:'•'; margin-right:0.5em;
 }
 
 ul#technologies li{
