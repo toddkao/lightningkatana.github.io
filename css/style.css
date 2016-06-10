@@ -1,5 +1,15 @@
+/* Cross browser inline block*/
 ul#technologies{
-  display:-moz-inline-box;
+        width: 200px;
+        min-height: 250px;
+        border: 1px solid #000;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        zoom: 1;
+        *display: inline;
+        _height: 250px;
 }
 ul#technologies li{
   padding-right:20px;
