@@ -41,7 +41,7 @@
         <li><a href="#">Options</a></li>
       </ul>
       <div class="navbar-right">
-  		<p class="navbar-text">Todd Kao</p>
+  	<!--	<p class="navbar-text">Todd Kao</p> -->
   	  </div>
     </div>
 </div>
@@ -250,6 +250,19 @@
             </div>
         </div>
     </footer>
+    
+<!-- Automatically close Hamburger menu when click outside -->
+<script>
+jQuery('body').bind('click', function(e) {
+    if(jQuery(e.target).closest('.navbar').length == 0) {
+        // click happened outside of .navbar, so hide
+        var opened = jQuery('.navbar-collapse').hasClass('collapse in');
+        if ( opened === true ) {
+            jQuery('.navbar-collapse').collapse('hide');
+        }
+    }
+});
+</script>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
