@@ -1,15 +1,8 @@
 /* Cross browser inline block*/
 ul#technologies{
-        width: 200px;
-        min-height: 250px;
-        display: -moz-inline-stack;
+        display: -moz-inline-block;
         display: inline-block;
-        vertical-align: top;
-        margin: 5px;
-        zoom: 1;
-        text-align:left;
-        *display: inline;
-        _height: 250px;
+
 }
 ul#technologies li{
   padding-right:20px;
