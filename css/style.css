@@ -2,7 +2,6 @@
 ul#technologies{
         width: 200px;
         min-height: 250px;
-        border: 1px solid #000;
         display: -moz-inline-stack;
         display: inline-block;
         vertical-align: top;
