@@ -1,10 +1,1 @@
-/* Cross browser inline block*/
-ul#technologies li:before{
- content:'•'; margin-right:0.5em;
-}
 
-ul#technologies li{
- width:10%;
- display: inline-block;
- font-size:20px;
-}
