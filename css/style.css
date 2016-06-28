@@ -10,6 +10,9 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+header{
+	
+}
 .back-to-top {
 background: none;
 margin: 0;
@@ -54,7 +57,8 @@ background-color: rgba(0,0,0,0.6);
 	margin-bottom: -6px;
 }
 .navbar-fixed-bottom, .navbar-fixed-top {
-	width: 90px;
+	width: 400px;
+	margin: 0 auto;
 }
 @media (max-width:767px){
 	.navbar-fixed-bottom, .navbar-fixed-top {
@@ -62,13 +66,19 @@ background-color: rgba(0,0,0,0.6);
 	}
 }
 
+#mobilemenu{
+	display: inline !important;
+}
+#mobilemenu .fa {
+	color:#fff;
+}
+
+#mobilemenu a :hover,#mobilemenu a:focus,#mobilemenu a:active  {
+	color:#000;
+}
 
 .center{
 	text-align: center;
-}
-
-#mobilemenu{
-	display: inline !important;
 }
 
 .text-vertical-center {
