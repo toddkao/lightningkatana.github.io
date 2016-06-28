@@ -2,7 +2,7 @@
 
 ![alt text][logo]
 
-[logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook profile picture"
+[logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook graph api my profile picture"
 =======
 
 currently under construction ...
