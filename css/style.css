@@ -29,6 +29,15 @@ body {
 .navbar-nav  li  a {
 	margin-bottom: -6px;
 }
+.navbar-fixed-bottom, .navbar-fixed-top {
+	width: 90px;
+}
+@media (max-width:767px){
+	.navbar-fixed-bottom, .navbar-fixed-top {
+	width: auto;
+}
+}
+
 
 .center{
 	text-align: center;
@@ -37,10 +46,6 @@ body {
 #mobilemenu{
 	display: inline !important;
 }
-@media (max-width:480px){
-	
-}
-
 
 .text-vertical-center {
     display: table-cell;
