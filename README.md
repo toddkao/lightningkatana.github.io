@@ -6,7 +6,7 @@
 -------
 * CNAME and setup DNS for toddkao.com
 * New menu bar 
-* url .html file extension removal ( handled by .htaccess ) 
+* url .html file extension removal ( [handled by .htaccess](https://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/) ) 
 * Back-to-top button on bottom right 
 
 ### To be completed
