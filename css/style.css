@@ -64,6 +64,9 @@ background-color: rgba(0,0,0,0.6);
 	.navbar-fixed-bottom, .navbar-fixed-top {
 	width: auto;
 	}
+	header{
+		height: 120%;
+	}
 }
 
 #mobilemenu{
