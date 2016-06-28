@@ -4,9 +4,9 @@
 
 ### Completed
 -------
-* Added CNAME and setup DNS for toddkao.com
-* Added new menu bar 
-* Added url .html file extension removal ( handled by .htaccess ) 
+* CNAME and setup DNS for toddkao.com
+* New menu bar 
+* url .html file extension removal ( handled by .htaccess ) 
 * Back-to-top button on bottom right 
 
 ### To be completed
