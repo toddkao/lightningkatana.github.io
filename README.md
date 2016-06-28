@@ -1,8 +1,13 @@
-#Todd Kao's Web developer website
+#Todd Kao
+![alt text][logo]
 
-currently under construction...
+[logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook profile picture"
 
-Just added CNAME and setup DNS for toddkao.com
+currently under construction ...
+
+#Completed
+
+* Added CNAME and setup DNS for toddkao.com
 
 * Added new menu bar 
 
