@@ -7,13 +7,9 @@
 ### Technologies being used:
 =======
 * HTML 5
-
 * CSS 3 (Haven't used LESS / SASS yet but I'm looking into it)
-
 * Bootstrap
-
 * JavaScript / jQuery
-
 
 ### Completed
 =======
