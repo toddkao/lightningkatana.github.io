@@ -3,9 +3,9 @@
 ![alt text][logo]
 
 [logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook graph api my profile picture"
-=======
 
-## Technologies being used:
+### Technologies being used:
+
 * HTML 5
 
 * CSS 3 (Haven't used LESS / SASS yet but I'm looking into it)
