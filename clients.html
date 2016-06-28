@@ -23,28 +23,17 @@
 	<body>
 
 		<!-- Navigation -->
-	<div class="navbar navbar-inverse center navbar-fixed-top">
-		<ul class="list-inline center" id="mobilemenu">
-			<li><a href="index"><i class="fa fa-user fa-fw fa-3x"></i></a><figcaption>About me</figcaption></li>
-			<li><a href="#"><i class="fa fa-briefcase fa-fw fa-3x selected"></i></a><figcaption>Clients</figcaption></li>
-			<li><a href="https://github.com/lightningkatana/lightningkatana.github.io"><i class="fa fa-code fa-fw fa-3x"></i></a><figcaption>Source Code</figcaption></li>
-			<li><a href="personal"><i class="fa fa-gamepad fa-fw fa-3x"></i></a><figcaption>Personal</figcaption></li>
-			<li><a href="contact"><i class="fa fa-envelope fa-fw fa-3x"></i></a><figcaption>Contact</figcaption></li>
-		</ul>
-		<!--
-		<div class="navbar-collapse collapse navbar-inner">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">About me</a></li>
-			<li><a href="#">Clients</a></li>
-			<li><a href="#">code</a></li>
-			<li><a href="#">Personal</a></li>
-			<li><a href="#contact">Contact</a></li>
-		  </ul>
-
+		<div class="navbar navbar-inverse center navbar-fixed-top">
+			<ul class="list-inline center" id="mobilemenu">
+				<li><a href="#"><i class="fa fa-user fa-fw fa-3x selected"></i></a><figcaption>About me</figcaption></li>
+				<li><a href="clients"><i class="fa fa-briefcase fa-fw fa-3x"></i></a><figcaption>Clients</figcaption></li>
+				<li><a href="https://github.com/lightningkatana/lightningkatana.github.io"><i class="fa fa-code fa-fw fa-3x"></i></a><figcaption>Source Code</figcaption></li>
+				<li><a href="personal"><i class="fa fa-gamepad fa-fw fa-3x"></i></a><figcaption>Personal</figcaption></li>
+				<li><a href="contact"><i class="fa fa-envelope fa-fw fa-3x"></i></a><figcaption>Contact</figcaption></li>
+			</ul>
 		</div>
-		-->
-	</div>
-		<a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-arrow-circle-up"></i></a>
+		<!-- back to top -->
+		<a href="#" class="back-to-top"><i class="fa fa-arrow-circle-up"></i></a>
 		
 		<!-- Header -->
 		<header id="top" class="header">
@@ -256,26 +245,6 @@
 			</div>
 		</footer>
 	</body>
-	
-	<script>
-			jQuery(document).ready(function() {
-			var offset = 250;
-			var duration = 300;
-			jQuery(window).scroll(function() {
-			if (jQuery(this).scrollTop() > offset) {
-			jQuery(‘.back-to-top’).fadeIn(duration);
-			} else {
-			jQuery(‘.back-to-top’).fadeOut(duration);
-			}
-			});
-			&nbsp;
-			jQuery(‘.back-to-top’).click(function(event) {
-			event.preventDefault();
-			jQuery(‘html, body’).animate({scrollTop: 0}, duration);
-			return false;
-			})
-		});
-	</script>
 	
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

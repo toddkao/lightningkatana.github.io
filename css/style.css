@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global */
 
 html,
 body {
@@ -10,9 +10,6 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-header{
-	
-}
 .back-to-top {
 background: none;
 margin: 0;
@@ -20,9 +17,8 @@ position: fixed;
 bottom: 10px;
 right: 10px;
 padding:10px;
-
 z-index: 100;
-display: none;
+display: inline;
 text-decoration: none;
 color: #fff;
 background-color: rgba(0,0,0,0.6);
