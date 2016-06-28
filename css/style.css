@@ -10,6 +10,30 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.back-to-top {
+background: none;
+margin: 0;
+position: fixed;
+bottom: 10px;
+right: 10px;
+padding:10px;
+
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #fff;
+background-color: rgba(0,0,0,0.6);
+}
+ 
+ .back-to-top:hover,.btn-dark:focus,.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.back-to-top i {
+  font-size: 60px;
+}
+
 .list-inline li {
 	padding: 5px !important;
 }
@@ -35,7 +59,7 @@ body {
 @media (max-width:767px){
 	.navbar-fixed-bottom, .navbar-fixed-top {
 	width: auto;
-}
+	}
 }
 
 
@@ -58,7 +82,9 @@ body {
     font-weight: bold;
 }
 #technologies li {
-	font-weight:bold;
+	color:#fff;
+	border-radius:5px;
+	background-color: rgba(0,0,0,0.7);
 }
 
 /* Custom Button Styles */

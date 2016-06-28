@@ -30,7 +30,7 @@
 			<li><a href="#"><i class="fa fa-briefcase fa-fw fa-3x"></i></a><figcaption>Clients</figcaption></li>
 			<li><a href="#"><i class="fa fa-code fa-fw fa-3x"></i></a><figcaption>Code</figcaption></li>
 			<li><a href="#"><i class="fa fa-gamepad fa-fw fa-3x"></i></a><figcaption>Personal</figcaption></li>
-			<li><a href="#"><i class="fa fa-envelope fa-fw fa-3x"></i></a><figcaption>Contact</figcaption></li>
+			<li><a href="#contact"><i class="fa fa-envelope fa-fw fa-3x"></i></a><figcaption>Contact</figcaption></li>
 		</ul>
 		<!--
 		<div class="navbar-collapse collapse navbar-inner">
@@ -45,7 +45,8 @@
 		</div>
 		-->
 	</div>
-
+		<a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-arrow-circle-up"></i></a>
+		
 		<!-- Header -->
 		<header id="top" class="header">
 			<div class="text-vertical-center">
@@ -55,10 +56,10 @@
 				<h3>I love clean and simple design of UI/UX and code</h3>
 				<br>
 				<ul class="list-inline" id="technologies" style="font-size:18px;">
-					<li> &bull; HTML 5 </li>
-					<li> &bull; CSS 3 </li>
-					<li> &bull; JavaScript </li>
-					<li> &bull; Bootstrap </li>
+					<li> HTML 5 </li>
+					<li> CSS 3 </li>
+					<li> JavaScript </li>
+					<li> Bootstrap </li>
 				</ul>
 				
 				<br>
@@ -256,20 +257,26 @@
 			</div>
 		</footer>
 	</body>
-		
-	<!-- Automatically close Hamburger menu when click outside -->
+	
 	<script>
-		jQuery('body').bind('click', function(e) {
-			if(jQuery(e.target).closest('.navbar').length == 0) {
-				// click happened outside of .navbar, so hide
-				var opened = jQuery('.navbar-collapse').hasClass('collapse in');
-				if ( opened === true ) {
-					jQuery('.navbar-collapse').collapse('hide');
-				}
+			jQuery(document).ready(function() {
+			var offset = 250;
+			var duration = 300;
+			jQuery(window).scroll(function() {
+			if (jQuery(this).scrollTop() > offset) {
+			jQuery(‘.back-to-top’).fadeIn(duration);
+			} else {
+			jQuery(‘.back-to-top’).fadeOut(duration);
 			}
+			});
+			&nbsp;
+			jQuery(‘.back-to-top’).click(function(event) {
+			event.preventDefault();
+			jQuery(‘html, body’).animate({scrollTop: 0}, duration);
+			return false;
+			})
 		});
 	</script>
-
 	
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
