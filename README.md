@@ -18,6 +18,9 @@
 ### Technologies being used:
 -------
 * HTML 5
-* CSS 3 (Haven't used LESS / SASS yet but I'm looking into it)
-* Bootstrap
-* JavaScript / jQuery
+* CSS 3 (Haven't used [{less}](http://lesscss.org/) / [Sass](http://sass-lang.com/) yet but I'm looking into it)
+* [Bootstrap v3.36](http://getbootstrap.com/)
+* [JavaScript] (https://www.javascript.com/)
+* [jQuery v2.2.0](https://jquery.com/)
+* [Github](https://github.com/)
+* [ToirtoiseGit](https://tortoisegit.org/) 
