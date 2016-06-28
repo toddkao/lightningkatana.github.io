@@ -81,7 +81,7 @@ background-color: rgba(0,0,0,0.6);
 }
 
 #mobilemenu a :hover,#mobilemenu a:focus,#mobilemenu a:active  {
-	color:#000 !important;
+	color:black !important;
 }
 
 .back-to-top:hover,.back-to-top:focus,.back-to-top:active  {
