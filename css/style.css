@@ -34,12 +34,13 @@ body {
 	text-align: center;
 }
 
-
-@media (max-width: 767px) {  
-	#mobilemenu{
-		display: inline !important;
-	}
+#mobilemenu{
+	display: inline !important;
 }
+@media (max-width:480px){
+	
+}
+
 
 .text-vertical-center {
     display: table-cell;
