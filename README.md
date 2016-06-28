@@ -1,4 +1,5 @@
-#Todd Kao
+# Todd Kao
+-------
 ![alt text][logo]
 [logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook graph api my profile picture"
 
@@ -6,7 +7,7 @@
 -------
 * Added CNAME and setup DNS for toddkao.com
 * Added new menu bar 
-* Added .html file extension removal ( .htaccess ) 
+* Added url .html file extension removal ( handled by .htaccess ) 
 * Back-to-top button on bottom right 
 
 ### To be completed
