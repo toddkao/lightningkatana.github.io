@@ -2,6 +2,7 @@
 
 currently under construction...
 
-Just added CNAME and setup DNS for www.ToddKao.com
+Just added CNAME and setup DNS for toddkao.com
 
-Still trying to figure it out though
+&0149 Added new menu bar 
+Added .html file extension removal (handled by .htaccess!)
