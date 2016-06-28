@@ -65,7 +65,7 @@ background-color: rgba(0,0,0,0.6);
 	width: auto;
 	}
 	header{
-		height: 120%;
+		height: 110% !important;
 	}
 }
 
