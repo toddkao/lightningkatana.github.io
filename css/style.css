@@ -10,10 +10,35 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.list-inline li {
+	padding: 5px !important;
+}
+
 /* navbar styling */
 .navbar{
 	    color: #fff;
     background-color: rgba(0,0,0,0.6);
+}
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+}
+.navbar-nav  li  a {
+	margin-bottom: -6px;
+}
+
+.center{
+	text-align: center;
+}
+
+
+@media (max-width: 767px) {  
+	#mobilemenu{
+		display: inline !important;
+	}
 }
 
 .text-vertical-center {
