@@ -84,6 +84,10 @@ background-color: rgba(0,0,0,0.6);
 	color:#000 !important;
 }
 
+.back-to-top:hover,.back-to-top:focus,.back-to-top:active  {
+	color:#fff !important;
+}
+
 .selected{
 	color: black !important;
 }
@@ -101,6 +105,7 @@ background-color: rgba(0,0,0,0.6);
 .text-vertical-center h1 {
     font-size: 4.5em;
     font-weight: bold;
+	margin:0;
 }
 #technologies li {
 	color:#fff;
