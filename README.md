@@ -5,8 +5,17 @@
 [logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook graph api my profile picture"
 =======
 
+## Technologies being used:
+* HTML 5
 
-#Completed
+* CSS 3 (Haven't used LESS / SASS yet but I'm looking into it)
+
+* Bootstrap
+
+* JavaScript / jQuery
+
+=======
+### Completed
 
 * Added CNAME and setup DNS for toddkao.com
 
@@ -16,7 +25,9 @@
 
 * Back-to-top button on bottom right 
 
-#To be completed
+=======
+
+### To be completed
 
 * Page content (all of them pretty much)
 
