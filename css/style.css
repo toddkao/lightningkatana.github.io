@@ -74,7 +74,11 @@ background-color: rgba(0,0,0,0.6);
 }
 
 #mobilemenu a :hover,#mobilemenu a:focus,#mobilemenu a:active  {
-	color:#000;
+	color:#000 !important;
+}
+
+.selected{
+	color: black !important;
 }
 
 .center{
