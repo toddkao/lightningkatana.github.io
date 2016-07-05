@@ -40,7 +40,7 @@ background-color: rgba(0,0,0,0.6);
 /* navbar styling */
 .navbar{
     color: #fff;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6) !important;
     border-radius: 10px !important;
 }
 .navbar.center .navbar-inner {
