@@ -1,0 +1,238 @@
+/* Margin */
+$center: 0 auto;
+
+/* Font*/
+$fontstack: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+/* Colors */
+$black06: rgba(0,0,0,0.6);
+$black03: rgba(0,0,0,0.3);
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $fontstack
+}
+
+.back-to-top {
+background: none;
+margin: $center;
+position: fixed;
+bottom: 10px;
+right: 10px;
+padding:10px;
+z-index: 100;
+display: inline;
+text-decoration: none;
+color:white;
+background-color: $black06;
+    &:hover,&:focus,&:active {
+        color:white;
+        background-color: $black03;
+    }
+    i{
+        font-size:60px;
+    }
+}
+
+.list-inline li {
+    padding: 5px;
+}
+
+/* navbar styling */
+.navbar{
+    color:white;
+    background-color: $black06 !important ;/*Over-ride bootstrap*/
+    border-radius: 10px !important; /* Over-ride bootstrap*/
+    .center.navbar-inner{
+        text-align:center;
+        .nav{
+            float: none;
+            display:inline-block;
+        }
+    }
+}
+
+.navbar-nav{
+    li {
+        a {
+            margin-bottom: -6px;
+        } 
+    }
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    width: 400px;
+    margin: $center;
+}
+
+@media (max-width:767px){
+    .navbar-fixed-bottom, .navbar-fixed-top {
+    width: auto;
+    }
+    .text-vertical-center {
+        display: inline;
+        h1{
+            margin-top:100px;
+        }
+    }
+}
+
+#mobilemenu{
+    display: inline;
+    .fa{
+        color: white;
+        &:hover,&:focus,&:active{
+            color:black;
+        }
+    }
+}
+
+.selected{
+    color:black !important;
+}
+
+.center{
+    text-align: center;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    h1 {
+        font-size: 4.5em;
+        font-weight: bold;
+        margin:0;
+    }
+}
+
+#technologies {
+    font-size:18px;
+    li{
+        color:white;
+        border-radius:5px;
+        background-color: $black06;
+    }
+}
+
+/* custom buttons */
+
+.btn-dark {
+    border-radius: 10px;
+    color:white;
+    background-color: $black03;
+        &:hover,&:focus,&:active{
+            color:white !important;
+            background-color: $black06;
+        }
+}
+
+.btn-light {
+    border-radius: 10px;
+    color: #333;
+    background-color: white;
+        &:hover,.btn-light:focus,.btn-light:active{
+            color: #333;
+            background-color: rgba(255,255,255,0.8);
+        }
+
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color:white;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: $center;
+    &:hover{
+        opacity:0.8;
+    }
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+    .btn{
+        margin: 10px;
+    }
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:767px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
