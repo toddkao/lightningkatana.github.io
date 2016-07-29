@@ -4,7 +4,7 @@
 
 ### Completed
 -------
-* CNAME and setup DNS for toddkao.com
+* CNAME and setup DNS for toddkao.com (REMOVED, MIGRATING/USING DOAMIN FOR WORDPRESS SITE)
 * New menu bar 
 * url .html file extension removal ( [handled by .htaccess](https://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/) ) 
 * Back-to-top button on bottom right 
