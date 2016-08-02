@@ -16,6 +16,21 @@ html,body {
     font-family: $fontstack;
 }
 
+h1{
+    color:black !important;
+}
+
+h2{
+        font-weight:bold !important;
+}
+
+#profilecard{
+    background:$black03;
+    max-width:550px;
+    border-radius:5px;
+    color:white;
+}
+
 /* Header */
 header {
     margin-top:-20px;
@@ -261,6 +276,9 @@ hr.small {
             }
         }
     }
+    #technologies{
+        font-size:15px;
+    }
 }
 
 @media(max-width:324px){
@@ -275,5 +293,8 @@ hr.small {
                 }
             }
         }
+    }
+    #technologies{
+        font-size:13px;
     }
 }
