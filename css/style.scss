@@ -262,3 +262,23 @@ hr.small {
         }
     }
 }
+
+@media(max-width:320px){
+    header{
+        h1 {
+            padding-top:50px !important;
+        }
+    }
+    #mobilemenu{
+        li{
+            figcaption{
+                display:none;
+            }
+            a{
+                i{
+                    font-size:$iconsize - 25;
+                }
+            }
+        }
+    }
+}
