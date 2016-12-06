@@ -28,7 +28,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.card:hover, .card:focus {
+.card:hover, .card:focus, card:active {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform:  rotateY(180deg);
