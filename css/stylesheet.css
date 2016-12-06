@@ -8,7 +8,6 @@ html{
 }
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: #EEE;
     color: #555;
 	background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#000f08), to(#0b3954));
 	background: -moz-gradient(linear, 0% 100%, 100% 0%, from(#000f08), to(#0b3954));
