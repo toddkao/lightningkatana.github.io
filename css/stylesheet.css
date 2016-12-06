@@ -1,0 +1,85 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    font-family: "Trebuchet MS";
+    background: #EEE;
+    color: #555;
+    perspective: 1500px
+}
+
+.card {
+    width: 400px;
+    height: 530px;
+    position: relative;
+    margin: 160px auto;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotate3d(0,90,0,180deg);
+    
+}
+
+.card > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #999;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    z-index: 2;
+}
+
+.card .front section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #EEE;
+}
+
+.card .front section h1 {
+    color: #66679A;
+    text-transform: uppercase;
+}
+
+.card .front hr {
+    height: 1px;
+    background: #DDD;
+    border: none;
+}
+
+.card .front > p {
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.card .front span {
+    color: #66679A;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #66679A;
+    padding: 10px;
+}
+
+.card .back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.back ul {
+    padding: 0;
+    list-style: none;
+    line-height: 40px;
+    margin-top: 40%
+}
