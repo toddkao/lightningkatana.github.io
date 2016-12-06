@@ -8,13 +8,10 @@ html{
 }
 body {
     font-family: 'Ubuntu', sans-serif;
-    color: #555;
-	background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#000f08), to(#0b3954));
-	background: -moz-gradient(linear, 0% 100%, 100% 0%, from(#000f08), to(#0b3954));
-	background-repeat: no-repeat;
-	position:absolute; top:0; bottom:0; right:0; left:0; 
-
-
+    background: -webkit-gradient(linear, 0% 100%, 100% 0%, from(#000f08), to(#0b3954));
+    background: -moz-gradient(linear, 0% 100%, 100% 0%, from(#000f08), to(#0b3954));
+    background-repeat: no-repeat;
+    position:absolute; top:0; bottom:0; right:0; left:0; 
 }
 
 .card {
