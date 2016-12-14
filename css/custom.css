@@ -7,13 +7,11 @@ html{
 	height:100%;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
     background: #f1f1f1;
-    position:absolute; top:0; bottom:0; right:0; left:0;
 }
 
 .card {
-    width: 400px;
+    max-width: 400px;
     height: 530px;
     position: relative;
     margin: 160px auto;
