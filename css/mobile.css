@@ -10,4 +10,10 @@
   .front{
     padding:0;
   }
+  .btn-fixed{
+    width:auto;
+    position:static;
+    left:auto;
+    margin-left:auto;
+  }
 }

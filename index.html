@@ -48,10 +48,11 @@
                         <h3>Web Developer</h3>
                 </section>
                 <hr>
-                <p ng-show="contact!=1" ng-cloak>Hi, I'm Todd. <br> I'm a web developer from Toronto. <br>I'm passionate about clean and simple design and code. </p>
+                <p ng-show="contact!=1" ng-cloak>Hi, I'm Todd. <br> I'm a web developer from Toronto. <br>I'm passionate about clean and simple design and code.</p>
                 <p ng-show="contact==1" ng-cloak> Email: <a href="mailto:todd.kakao@gmail.com">todd.kakao@gmail.com</a> <br> LinkedIn: <a href="https://www.linkedin.com/in/lightningkatana">Todd Kao</a></p>
-                <button ng-show="contact!=1" ng-cloak class="btn-primary btn" ng-class="(contact == '1')" ng-click="contact = 1">contact me</button>
-                <button ng-show="contact==1" ng-cloak class="btn-primary btn" ng-class="(contact == '0')" ng-click="contact = 0">Info</button>
+
+                <button ng-show="contact!=1" ng-cloak class="btn-primary btn btn-fixed" ng-class="(contact == '1')" ng-click="contact = 1">contact me</button>
+                <button ng-show="contact==1" ng-cloak class="btn-primary btn btn-fixed" ng-class="(contact == '0')" ng-click="contact = 0">Info</button>
             </div>
 
         </div>
