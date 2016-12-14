@@ -11,7 +11,7 @@ body {
 }
 
 .card {
-    max-width: 400px;
+    width: 400px;
     height: 530px;
     position: relative;
     margin: 160px auto;
