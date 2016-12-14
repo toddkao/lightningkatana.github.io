@@ -28,12 +28,6 @@ body {
     transform-style: preserve-3d;
 }
 
-.card:hover, .card:focus, .card:active {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform:  rotateY(180deg);
-}
-
 .back, .front {
   position: absolute;
 	-webkit-backface-visibility: hidden;
@@ -74,12 +68,13 @@ body {
     border: none;
 }
 
-.front > p {
+p {
+    font-size:18px;
     line-height: 25px;
     margin-bottom: 30px;
 }
 
-.front span {
+.btn {
     color: #66679A;
     font-weight: bold;
     border-radius: 10px;
@@ -88,12 +83,6 @@ body {
     padding: 10px;
 }
 
-.back {
-    transform-style:preserve-3d;
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
 
 .back ul {
     padding: 0;

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app=app>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,9 +16,26 @@
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/mobile.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- JS -->
+        <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+      crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+        <script type="text/javascript">
+            var app = angular.module('app', [])
+            .controller('app', ["$scope", function($scope) {
+                $scope.contact;
+            }])
+        </script>
+
     </head>
-    <body>
+    <body ng-controller="app">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -32,16 +49,12 @@
                         <h3>Web Developer</h3>
                 </section>
                 <hr>
-                <p>Hi, I'm Todd. <br> I'm a web developer from Toronto. <br>I'm passionate about clean and simple design and code. </p>
-                <span>Hover to Contact Me</span>
+                <p ng-show="contact!=1" ng-cloak>Hi, I'm Todd. <br> I'm a web developer from Toronto. <br>I'm passionate about clean and simple design and code. </p>
+                <p ng-show="contact==1" ng-cloak> Email: <a href="mailto:todd.kakao@gmail.com">todd.kakao@gmail.com</a> <br> LinkedIn: <a href="https://www.linkedin.com/in/lightningkatana">Todd Kao</a></p>
+                <button ng-show="contact!=1" ng-cloak class="btn-primary btn" ng-class="(contact == '1')" ng-click="contact = 1">contact me</button>
+                <button ng-show="contact==1" ng-cloak class="btn-primary btn" ng-class="(contact == '0')" ng-click="contact = 0">Info</button>
+            </div>
 
-            </div>
-            <div class="back">
-                <ul>
-                    <li>Email: <a href="mailto:todd.kakao@gmail.com">todd.kakao@gmail.com</a></li>
-                    <li>LinkedIn: <a href="https://ca.linkedin.com/in/todd-kao-78a394120"> Todd Kao</a></li>
-                </ul>
-            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -50,6 +63,7 @@
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
