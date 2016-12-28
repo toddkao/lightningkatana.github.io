@@ -5,15 +5,8 @@
   .card{
     margin:0;
     width:auto;
-    height: 100vh;
   }
   .front{
     padding:0;
-  }
-  .btn-fixed{
-    width:auto;
-    position:static;
-    left:auto;
-    margin-left:auto;
   }
 }
