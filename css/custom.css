@@ -10,11 +10,7 @@ body {
     background: #f1f1f1;
 }
 .btn-fixed{
-  width:120px;
-  position:fixed;
-  bottom:50px;
-  left:50%;
-  margin-left:-60px;
+
 }
 .card {
     width: 400px;

@@ -1,12 +1,19 @@
-@media only screen and (max-width : 439px) {
+@media only screen and (max-width : 439px), screen and (max-height:600px) {
   .card >div{
     box-shadow: none;
   }
   .card{
     margin:0;
     width:auto;
+    height:100vh;
   }
   .front{
     padding:0;
+  }
+  .btn-fixed{
+    width:auto;
+    position:static;
+    left:auto;
+    margin-left:auto;
   }
 }
