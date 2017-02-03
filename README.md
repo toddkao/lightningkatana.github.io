@@ -5,11 +5,12 @@
 ### Completed
 -------
 * CNAME and setup DNS for toddkao.com 
-* url .html file extension removal ( [handled by .htaccess](https://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/) ) 
+* url .html file extension removal 
+* Enforce https
 
 ### To be completed
 -------
-* Page content (all of them pretty much)
+* Page content
 * Favicon
 * Back-to-top button on bottom right script to make it only show when needed (at bottom of page)
 
@@ -17,5 +18,5 @@
 -------
 * HTML 5
 * Sass / CSS 3 
-* Bootstrap v3.36
+* Bootstrap 
 * JavaScript 
