@@ -43,8 +43,7 @@ p{
     border-bottom: 0px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-    border-bottom-color:#ddd;
-    border-radius:100%;
+    border-color:transparent;
 }
 
 .tab-pane{
