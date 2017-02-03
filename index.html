@@ -1,78 +1,484 @@
-<!doctype html>
-<html class="no-js" lang="" ng-app=app>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Todd Kao</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Todd Kao</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/animate.min.css" rel="stylesheet" />
+	<link href="assets/css/style.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet"/>
+	<link href="assets/css/style-responsive.min.css" rel="stylesheet" />
+	<link href="assets/css/theme/default.css" id="theme" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/mobile.css">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+</head>
+<body>
+    <!-- begin #page-container -->
+    <div id="page-container">
+    <!-- begin container -->
+            <div class="container" data-animation="true" data-animation-type="fadeInDown" >
+              <!--  <img style="border-radius:50%;width:150px;height:150px;margin:0 auto;margin-top:50px;display:block"" src="https://graph.facebook.com/1078520008/picture?type=large" alt="Todd Kao">
+              -->
 
-        <!-- JS -->
-        <script
-      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-      integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-      crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+              <!-- begin row -->
+                <div class="row ">
+                    <!-- begin col-6 -->
+                    <div class="col-md-12" >
+                        <h1 class="main-title horalign">Todd Kao</h1>
+                        <br>
+                        <!-- begin nav-tabs -->
+                        <ul id="nav-tabs" class="nav nav-tabs horalign ">
+                            <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <br>About me</a></li>
+                            <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><br>Projects</a></li>
+                            <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Work</a></li>
+                            <li><a href="#tab-4" data-toggle="tab"><i class="fa fa-file-text fa-2x" aria-hidden="true"></i><br>Resumé</a></li>
+                        </ul>
+                        <!-- end nav-tabs -->
+                        <!-- begin tab-content -->
+                        <br>
+                        <div id="tab-content" class="tab-content horalign">
+                            <!-- begin tab-pane -->
+                            <div class="tab-pane fade in active" id="tab-1">
+<div id="about"data-scrollview="true">
+            <!-- begin container -->
+            <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                <!-- begin row -->
+                <div class="row">
+                    <!-- begin col-4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <!-- begin about -->
+                        <div class="about">
+                            <h3>About me</h3>
+                            <p>
+                                 I'm Todd Kao. <br>
+                                 I'm a Web Developer from Toronto. <br>
+                                 Other fields of interest include software development, artificial intelligence/bots, networking and game development.
+                            </p>
+                            <p>
 
-        <script type="text/javascript">
-            var app = angular.module('app', [])
-            .controller('app', ["$scope", function($scope) {
-                $scope.contact;
-            }])
-        </script>
+                            </p>
+                        </div>
+                        <!-- end about -->
+                    </div>
+                    <!-- end col-4 -->
+                    <!-- begin col-4 -->
+                    <div class="col-md-4 col-sm-12">
+                        <h3>Technical skills</h3>
+                        <!-- begin skills -->
+                        <div class="skills">
+                            <div class="skills-name">Front End</div>
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-success" style="width: 95%">
+                                    <span class="progress-number">95%</span>
+                                </div>
+                            </div>
+                            <div class="skills-name">Programming</div>
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-success" style="width: 90%">
+                                    <span class="progress-number">90%</span>
+                                </div>
+                            </div>
+                            <div class="skills-name">Database Design</div>
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-success" style="width: 85%">
+                                    <span class="progress-number">85%</span>
+                                </div>
+                            </div>
+                            <div class="skills-name">Wordpress</div>
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-success" style="width: 80%">
+                                    <span class="progress-number">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end skills -->
+                    </div>
+                    <!-- end col-4 -->
 
-    </head>
-    <body ng-controller="app">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+                    <!-- begin col-4 -->
+                    <div class="col-md-4 col-sm-12">
+                        <h3>Technologies</h3>
+                        <!-- begin col-3 -->
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/html5.png" alt="Work 1"></a>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/css3.png" alt="Work 3"></a>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/js.png" alt="Work 5"></a>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/bootstrap.png" alt="Work 5"></a>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                        
+                    </div>
+                    <!-- end col-4 -->
 
-        <!-- Add your site or application content here -->
-        
+                </div>
+                <!-- end row -->
+                <br> 
 
-        <div class="card">
-            <div class="front">
-                <section>
-                    <img src="https://graph.facebook.com/1078520008/picture?type=large" alt="Todd Kao">
-                        <h1>Todd Kao</h1>
-                        <h3>Web Developer</h3>
-                </section>
-                <hr>
-                <p ng-show="contact!=1" ng-cloak>Hi, I'm Todd. <br> I'm a web developer from Toronto. <br>I'm passionate about clean and simple design and code.</p>
-                <p ng-show="contact==1" ng-cloak> Email: <a href="mailto:todd.kakao@gmail.com">todd.kakao@gmail.com</a> <br> LinkedIn: <a href="https://www.linkedin.com/in/lightningkatana">Todd Kao</a></p>
-
-                <button ng-show="contact!=1" ng-cloak class="btn-primary btn btn-fixed" ng-class="(contact == '1')" ng-click="contact = 1">contact me</button>
-                <button ng-show="contact==1" ng-cloak class="btn-primary btn btn-fixed" ng-class="(contact == '0')" ng-click="contact = 0">Info</button>
             </div>
 
+            <!-- end container -->
         </div>
+                            </div>
+                            <!-- end tab-pane -->
+                            <!-- begin tab-pane -->
+                            <div class="tab-pane fade" id="tab-2">
+<div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                <h2 class="content-title"> Current projects</h2>
+                <p class="content-desc">
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+                </p>
+                <!-- begin row -->
+                <div class="row row-space-10">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-1.jpg" alt="Work 1"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Aliquam molestie</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-3.jpg" alt="Work 3"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Quisque at pulvinar lacus</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-5.jpg" alt="Work 5"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Vestibulum et erat ornare</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-7.jpg" alt="Work 7"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Sed vitae mollis magna</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+                <!-- begin row -->
+                <div class="row row-space-10">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-2.jpg" alt="Work 2"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Suspendisse at mattis odio</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-4.jpg" alt="Work 4"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Aliquam vitae commodo diam</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-6.jpg" alt="Work 6"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Phasellus eu vehicula lorem</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-8.jpg" alt="Work 8"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Morbi bibendum pellentesque</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+            </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                            </div>
+                            <!-- end tab-pane -->
+                            <!-- begin tab-pane -->
+                            <div class="tab-pane fade" id="tab-3">
+<div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                <h2 class="content-title">Our Latest Work</h2>
+                <p class="content-desc">
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-88939197-1','auto');ga('send','pageview');
-        </script>
-    </body>
+                </p>
+                <!-- begin row -->
+                <div class="row row-space-10">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-1.jpg" alt="Work 1"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Aliquam molestie</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-3.jpg" alt="Work 3"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Quisque at pulvinar lacus</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-5.jpg" alt="Work 5"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Vestibulum et erat ornare</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-7.jpg" alt="Work 7"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Sed vitae mollis magna</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+                <!-- begin row -->
+                <div class="row row-space-10">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-2.jpg" alt="Work 2"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Suspendisse at mattis odio</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-4.jpg" alt="Work 4"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Aliquam vitae commodo diam</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-6.jpg" alt="Work 6"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Phasellus eu vehicula lorem</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <!-- begin work -->
+                        <div class="work">
+                            <div class="image">
+                                <a href="#"><img src="assets/img/work-8.jpg" alt="Work 8"></a>
+                            </div>
+                            <div class="desc">
+                                <span class="desc-title">Morbi bibendum pellentesque</span>
+                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <!-- end work -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+            </div>
+                            </div>
+                            <!-- end tab-pane -->
+
+                            <!-- begin tab-pane -->
+                            <div class="tab-pane fade" id="tab-4">
+                                    <iframe src="./assets/src/tkao.pdf#page=1&zoom=90" style="width:800px; height:800px" frameborder="0"></iframe>
+                            </div>
+                            <!-- end tab-pane -->
+                        </div>
+                        <!-- end tab-content -->
+                    </div>
+                    <!-- end col-6 -->
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+      </div>
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+	<script src="assets/plugins/scrollMonitor/scrollMonitor.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+
+	<script>
+	    $(document).ready(function() {
+	        App.init();
+	    });
+	</script>
+</body>
 </html>
