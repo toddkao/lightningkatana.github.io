@@ -6,7 +6,7 @@
 -------
 * CNAME and setup DNS for toddkao.com 
 * url .html file extension removal 
-* Enforce https
+* Enforce https://
 
 ### To be completed
 -------
