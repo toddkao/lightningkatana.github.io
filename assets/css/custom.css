@@ -1,3 +1,7 @@
+body,html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 #page-container{
     display:flex;
     justify-content:center;
@@ -42,8 +46,16 @@ p{
 .nav-tabs {
     border-bottom: 0px;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
     border-color:transparent;
+    color:#00acac;
+}
+.nav-tabs.nav-justified>a, .nav-tabs.nav-justified>a:focus, .nav-tabs.nav-justified>a:hover, .nav-tabs>li>a, .nav-tabs>li>a:focus, .nav-tabs>li>a:hover{
+    border-color:transparent;
+    background-color:transparent;
+}
+.nav-tabs>a + i:hover{
+    color:blue;
 }
 
 .tab-pane{
@@ -53,16 +65,18 @@ p{
 .tab-content{
     padding:20px;
 }
-.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    color:#00acac;
-}
 
 #page-container{
     overflow:scroll;
 }
 
 @media (max-width:395px){
-        .nav>li>a {
-    padding: 8px 2px;
+    .nav>li>a {
+        padding: 8px 2px;
+    }
 }
+@media (max-width:289px){
+    .nav>li>a {
+        padding: 8px 1px;
+    }
 }
