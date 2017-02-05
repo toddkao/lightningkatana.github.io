@@ -1,7 +1,9 @@
 body,html{
     font-family: 'Ubuntu', sans-serif;
 }
-
+.center-text{
+    text-align:center;
+}
 #page-container{
     display:flex;
     justify-content:center;
@@ -12,14 +14,39 @@ body,html{
     left:0px;
     z-index:1000px;
 }
-
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* color: #00acac; */
+    border-top: 2px solid #00acac;
+    border-radius: 100%; 
+    width: 40%;
+}
+.img-wrapper{
+    padding:8px; 
+    overflow:hidden; 
+    position:relative;
+    border: 5px solid #00acac;
+    border-radius: 50%;
+}
+.profile{
+    margin-top: 20px;
+}
+.portrait{
+    float:left;
+    padding:5px;
+    width:150px;
+}
+img{
+    width:100%;
+}
 .pace{
     /* hides loading bar
     display:none;
     */
 }
 .container{
-    margin-top:50px;
+    margin-top:20px;
     text-align:center;
 }
 .main-title{
@@ -41,7 +68,7 @@ a{
     font-weight:bold;
 }
 p{
-    font-size:16px;
+    font-size:15px;
 }
 .nav-tabs {
     border-bottom: 0px;
@@ -70,6 +97,11 @@ p{
     overflow:scroll;
 }
 
+.service.service-vertical {
+    max-width: 300px;
+    margin: auto;
+}
+
 @media (max-width:395px){
     .nav>li>a {
         padding: 8px 2px;
@@ -78,5 +110,16 @@ p{
 @media (max-width:289px){
     .nav>li>a {
         padding: 8px 1px;
+    }
+}
+
+@media (max-width:992px){
+    .divsamerow{
+        display:block !important;
+    }
+}
+@media (min-width: 992px){
+    .col-md-1point5{
+        width: 12.499999995%;
     }
 }
