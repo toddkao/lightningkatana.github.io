@@ -113,13 +113,25 @@ p{
     }
 }
 
-@media (max-width:992px){
+@media (max-width:450px){
+    .col-cust{
+        width:50%;
+    }
+}
+
+@media (max-width:500px){
+    .col-services{
+        width:100%;
+    }
+}
+
+@media (max-width:991px){
     .divsamerow{
         display:block !important;
     }
 }
-@media (min-width: 992px){
-    .col-md-1point5{
+@media (min-width: 991px){
+    .col-cust{
         width: 12.499999995%;
     }
 }
