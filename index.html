@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-	<title>Todd Kao</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>Todd Kao's Portfolio</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<meta content="Todd Kao - ‎Web Developer and Software Developer" name="robots" />
 	<meta content="Todd Kao" name="author" />
@@ -16,101 +18,95 @@
 	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="assets/css/animate.min.css" rel="stylesheet" />
 	<link href="assets/css/style.min.css" rel="stylesheet" />
-    <link href="assets/css/main.css" rel="stylesheet"/>
 	<link href="assets/css/style-responsive.min.css" rel="stylesheet" />
 	<link href="assets/css/theme/default.css" id="theme" rel="stylesheet" />
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" >
 	<!-- ================== END BASE CSS STYLE ================== -->
 
 	<!-- ================== BEGIN BASE JS ================== -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="assets/plugins/pace/pace.min.js"></script>
 	<!-- ================== END BASE JS ================== -->
+
 </head>
 <body>
     <!-- begin #page-container -->
     <div id="page-container">
     <!-- begin container -->
-            <div class="container" data-animation="true" data-animation-type="fadeInDown" >
-              <!--  <img style="border-radius:50%;width:150px;height:150px;margin:0 auto;margin-top:50px;display:block"" src="https://graph.facebook.com/1078520008/picture?type=large" alt="Todd Kao">
-              -->
-
-              <!-- begin row -->
-                <div class="row ">
-                    <!-- begin col-6 -->
-                    <div class="col-md-12" >
-                        <h1 class="main-title horalign">Todd Kao</h1>
-                        <br>
-                        <!-- begin nav-tabs -->
-                        <ul id="nav-tabs" class="nav nav-tabs horalign ">
-                            <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <br>About me</a></li>
-                            <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><br>Projects</a></li>
-                            <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Work</a></li>
-                            <li><a href="#tab-4" data-toggle="tab"><i class="fa fa-file-text fa-2x" aria-hidden="true"></i><br>Resumé</a></li>
-                        </ul>
-                        <!-- end nav-tabs -->
-                        <!-- begin tab-content -->
-                        <br>
-                        <div id="tab-content" class="tab-content horalign">
-                            <!-- begin tab-pane -->
-                            <div class="tab-pane fade in active" id="tab-1">
-<div id="about"data-scrollview="true">
-            <!-- begin container -->
-            <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
-                <!-- begin row -->
-                <div class="row">
-                    <!-- begin col-4 -->
-                    <div class="col-md-6 col-sm-12 profile">
-                            <img class="portrait" src="assets/img/pic.jpg">                       
-                            <div class="about">
-                                <h3>Who I am</h3>                           
-                                <p>
-                                    I'm a Web Developer from Toronto. <br>
-                                    Other fields of interest include software development, artificial intelligence/bots, networking and game development.
-                                </p>
-                            </div>
-                    </div>
-                    <br>
-                    <hr class="divsamerow" style="display:none">
-
-                     <!-- begin col-4 -->
-                    <div class="col-md-6 col-sm-12">
-                        <h3>Technical skills</h3>
-                        <!-- begin skills -->
-                        <div class="skills">
-                            <div class="skills-name">Front End</div>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" style="width: 95%">
-                                    <span class="progress-number">95%</span>
-                                </div>
-                            </div>
-                            <div class="skills-name">Programming</div>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" style="width: 90%">
-                                    <span class="progress-number">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills-name">Database Design</div>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" style="width: 85%">
-                                    <span class="progress-number">85%</span>
-                                </div>
-                            </div>
-                            <div class="skills-name">Wordpress</div>
-                            <div class="progress progress-striped">
-                                <div class="progress-bar progress-bar-success" style="width: 80%">
-                                    <span class="progress-number">80%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end skills -->
-                    </div>
-                    <!-- end col-4 -->
-
-                    
+        <div class="container" data-animation="true" data-animation-type="fadeInDown">
+            <!-- begin row -->
+            <div class="row ">
+                <!-- begin col-6 -->
+                <div class="col-md-12" >
+                    <!-- begin nav-tabs -->
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <br>About me</a></li>
+                        <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><br>Projects</a></li>
+                        <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Work</a></li>
+                        <li><a href="assets/src/tkao.pdf" target="_blank"><i class="fa fa-file-text fa-2x"></i><br>Resumé</a></li>
+                    </ul>
                 </div>
-                <!-- end row -->
+                    <!-- end nav-tabs -->
+                    <!-- begin tab-content -->
+                    <div id="tab-content" class="tab-content horalign">
+                        <!-- begin tab-pane -->
+                        <div class="tab-pane fade in active" id="tab-1">
+                            <div id="about"data-scrollview="true">
+                                <!-- begin container -->
+                                <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                                    <!-- begin row -->
+                                    <div class="row">
+                                        <!-- begin col-4 -->
+                                        <div class="col-md-3 col-sm-3 profile portrait">
+                                                <img src="assets/img/pic.jpg">       
+                                        </div>
+                                        <div class=" col-md-3 col-sm-3 profile">
+                                            <h3>Who I am</h3>                           
+                                            <p> 
+                                                I'm Todd Kao. <br>
+                                                I'm a Web Developer from Toronto. <br>
+                                                Other fields of interest include software development, artificial intelligence/bots, networking and game development.
+                                            </p>
+                                        </div>
+                                        <!-- begin col-4 -->
+                                        <div class="col-md-6 col-sm-6">
+                                            <h3>Technical skills</h3>
+                                            <!-- begin skills -->
+                                            <div class="skills">
+                                                <div class="skills-name">Front End</div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-success" style="width: 95%">
+                                                        <span class="progress-number">95%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="skills-name">Programming</div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-success" style="width: 90%">
+                                                        <span class="progress-number">90%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="skills-name">Database Design</div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-success" style="width: 85%">
+                                                        <span class="progress-number">85%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="skills-name">Wordpress</div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-success" style="width: 80%">
+                                                        <span class="progress-number">80%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end skills -->
+                                        </div>
+                                        <!-- end col-4 -->
+                                    </div>
+                                    <!-- end row -->
                 <hr>
                 <!-- begin services -->
-                <h3 class="center-text">Services</h3>
+                <h3>Services</h3>
                 <!-- begin row -->
                 <div class="row">
                     <!-- begin col-3 -->
@@ -153,59 +149,59 @@
 
                  <!-- begin col-4 -->
                     <div class="row">
-                        <h3 class="center-text">Technologies used</h3>                           
+                        <h3>Technologies used</h3>                           
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://en.wikipedia.org/wiki/HTML5"><img src="assets/img/html5.png" alt="Html5"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><img src="assets/img/css3.png" alt="Css3"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="assets/img/js.png" alt="Javascript"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://getbootstrap.com"><img src="assets/img/bootstrap.png" alt="Bootstrap"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://angularjs.org/"><img src="assets/img/angular.png" alt="Angular"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://nodejs.org/en/"><img src="assets/img/node.png" alt="Node.js"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://www.mysql.com/"><img src="assets/img/mysql.png" alt="MySQL"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-cust col-sm-3 col-xs-3">                           
                             <div class="img-wrapper">
-                                <div class="image">
+                                <div class="tech">
                                     <a href="https://secure.php.net/"><img src="assets/img/php.png" alt="PHP"></a>
                                 </div>
                             </div>
@@ -230,7 +226,7 @@
                 <!-- begin row -->
                 <div class="row row-space-10">
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -245,7 +241,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -260,7 +256,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -275,7 +271,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -294,7 +290,7 @@
                 <!-- begin row -->
                 <div class="row row-space-10">
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -309,7 +305,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -324,7 +320,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -339,7 +335,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -369,7 +365,7 @@
                 <!-- begin row -->
                 <div class="row row-space-10">
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -384,7 +380,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -399,7 +395,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -414,7 +410,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -433,7 +429,7 @@
                 <!-- begin row -->
                 <div class="row row-space-10">
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -448,7 +444,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -463,7 +459,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -478,7 +474,7 @@
                     </div>
                     <!-- end col-3 -->
                     <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
                         <!-- begin work -->
                         <div class="work">
                             <div class="image">
@@ -500,13 +496,10 @@
 
                             <!-- begin tab-pane -->
                             <div class="tab-pane fade" id="tab-4">
-                                    <iframe src="./assets/src/tkao.pdf#page=1&zoom=90" style="width:800px; height:800px" frameborder="0"></iframe>
                             </div>
                             <!-- end tab-pane -->
                         </div>
                         <!-- end tab-content -->
-                    </div>
-                    <!-- end col-6 -->
 
                 </div>
                 <!-- end row -->
