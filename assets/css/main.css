@@ -95,10 +95,75 @@ textarea {
    Todd Kao's styles
    ========================================================================== */
 
+.work{
+    border: 5px dotted lightgray;
+    margin: 5px;
+} 
+.description{
+    display:none;
+}  
+.description{
+    text-align:center;
+    padding: 12px 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    border-radius:5%;
+    color:white;
+}
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexcenter > a{
+    padding:10px;
+}
+.row>[class*=col-]{
+    padding: 0px 0px;
+}   
+.portrait img {
+    margin-top: 0px;
+}
+.portrait{
+    width:100%;
+}
+.portrait > img{
+    width:100px;
+    display:block;
+    margin: 0 auto;
+    border-radius:20%; 
+}
+.profile > p{ 
+max-width:400px;
+margin: 0 auto;
+padding-bottom:30px;
+
+}
+
+.visible{
+    display:block !important;
+}
+.work{
+    border-radius: 5%;
+}
+
+.work .desc {
+    top: 0;
+    bottom: 0;
+    display:none;
+}
+
 body,html{
     font-family: 'Ubuntu', sans-serif;
 }
-h3{
+h1,h2,h3,h4{
     text-align:center;
 }
 #page-container{
@@ -116,9 +181,7 @@ h3{
 .service.service-vertical{
     text-align:left;
 }
-h4{
-    text-align:center;
-}
+
 hr {
     margin: 20px auto;
     border-top: 2px solid #00acac;
@@ -131,7 +194,7 @@ hr {
 .nav-pills > li {
     float:none;
     display:inline-block;
-    width:95px;
+    width:100px;
 }
 
 .nav-pills {
@@ -142,15 +205,9 @@ hr {
     padding:8px; 
     overflow:hidden; 
     position:relative;
-    border: 5px solid #00acac;
-    border-radius: 50%;
 }
 .profile{
     padding:5px;
-}
-.portrait{
-    float:left;
-    width:150px;
 }
 img{
     width:100%;
@@ -173,9 +230,6 @@ img{
     margin-bottom:20px;
     font-size:3em;
     text-align:center;
-}
-.horalign{
-    display:inline-block;
 }
 
 a{
@@ -208,26 +262,24 @@ p{
    Media Queries (Small to Large screen sizes)
    ========================================================================== */
 
-@media (max-width:395px){
-    .nav>li>a {
-        padding: 8px 10px;
+
+@media (max-width:354px){
+    .nav-pills > li{
+        width: 60px;
     }
-}
-@media (max-width:333px){
-    .nav>li>a {
-        padding: 8px 1px;
+    .menuText{
+        display:none;
     }
 }
 
-@media (max-width:450px){
-    .col-cust{
-        width:50%;
+@media (max-width:433px) and (min-width:355px){
+    .nav-pills > li{
+        width: 80px;
     }
-    .nav-pills > li {
-    float:none;
-    display:inline-block;
-    width:auto;
+    .menuText{
+        font-size:10px;
     }
+
 }
 
 @media (max-width:500px){
@@ -236,15 +288,11 @@ p{
     }
 }
 @media (max-width:767px){
+    .portrait img {
+        margin-top: 0px;
+    }
     .portrait{
         width:100%;
-    }
-    .portrait > img{
-        width:100px;
-        display:block;
-        margin: 0 auto;
-        border-radius:50%; 
-        border: 3px solid #00acac;
     }
     .profile > p{ 
     max-width:280px;
