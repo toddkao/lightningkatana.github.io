@@ -31,481 +31,222 @@
 
 </head>
 <body>
-    <!-- begin #page-container -->
     <div id="page-container">
-    <!-- begin container -->
         <div class="container" data-animation="true" data-animation-type="fadeInDown">
-            <!-- begin row -->
             <div class="row ">
-                <!-- begin col-6 -->
                 <div class="col-md-12" >
-                    <!-- begin nav-tabs -->
                     <ul class="nav nav-pills">
-                        <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <br>About me</a></li>
-                        <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><br>Projects</a></li>
-                        <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br>Work</a></li>
-                        <li><a href="assets/src/tkao.pdf" target="_blank"><i class="fa fa-file-text fa-2x"></i><br>Resumé</a></li>
+                        <li class="active"><a href="#aboutTab" data-toggle="tab"><i class="fa fa-user fa-2x" aria-hidden="true"></i> <br><p class="menuText">About me</p></a></li>
+                        <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-tasks fa-2x" aria-hidden="true"></i><br><p class="menuText">Projects</p></a></li>
+                        <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i><br><p class="menuText">Work</p></a></li>
+                        <li><a href="assets/src/tkao.pdf" target="_blank"><i class="fa fa-file-text fa-2x"></i><br><p class="menuText">CV</p></a></li>
                     </ul>
-                </div>
-                    <!-- end nav-tabs -->
-                    <!-- begin tab-content -->
-                    <div id="tab-content" class="tab-content horalign">
-                        <!-- begin tab-pane -->
-                        <div class="tab-pane fade in active" id="tab-1">
-                            <div id="about"data-scrollview="true">
-                                <!-- begin container -->
-                                <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
-                                    <!-- begin row -->
-                                    <div class="row">
-                                        <!-- begin col-4 -->
-                                        <div class="col-md-3 col-sm-3 profile portrait">
-                                                <img src="assets/img/pic.jpg">       
-                                        </div>
-                                        <div class=" col-md-3 col-sm-3 profile">
-                                            <h3>Who I am</h3>                           
-                                            <p> 
-                                                I'm Todd Kao. <br>
-                                                I'm a Web Developer from Toronto. <br>
-                                                Other fields of interest include software development, artificial intelligence/bots, networking and game development.
-                                            </p>
-                                        </div>
-                                        <!-- begin col-4 -->
-                                        <div class="col-md-6 col-sm-6">
-                                            <h3>Technical skills</h3>
-                                            <!-- begin skills -->
-                                            <div class="skills">
-                                                <div class="skills-name">Front End</div>
-                                                <div class="progress progress-striped">
-                                                    <div class="progress-bar progress-bar-success" style="width: 95%">
-                                                        <span class="progress-number">95%</span>
-                                                    </div>
-                                                </div>
-                                                <div class="skills-name">Programming</div>
-                                                <div class="progress progress-striped">
-                                                    <div class="progress-bar progress-bar-success" style="width: 90%">
-                                                        <span class="progress-number">90%</span>
-                                                    </div>
-                                                </div>
-                                                <div class="skills-name">Database Design</div>
-                                                <div class="progress progress-striped">
-                                                    <div class="progress-bar progress-bar-success" style="width: 85%">
-                                                        <span class="progress-number">85%</span>
-                                                    </div>
-                                                </div>
-                                                <div class="skills-name">Wordpress</div>
-                                                <div class="progress progress-striped">
-                                                    <div class="progress-bar progress-bar-success" style="width: 80%">
-                                                        <span class="progress-number">80%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end skills -->
-                                        </div>
-                                        <!-- end col-4 -->
+                </div>                  
+                <div id="tab-content" class="tab-content flexcenter">
+                    <div class="tab-pane fade in active" id="aboutTab">
+                        <div id="about"data-scrollview="true">
+                            <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 profile portrait"><img src="assets/img/pic.jpg"></div>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-md-12 col-sm-12 profile">                         
+                                        <h3>Todd Kao</h3>  
+                                        <p>I'm a Web Developer from Toronto. I study Computer Science at Ryerson University. I love minimalistic designs and neat, readable code. I recently discovered React.js and I'm planning on taking on a few personal projects to quickly learn the ins and outs of this wonderful library. Once I get the hang of it, I'm planning on uploading some videos on youtube of programming challenges i give myself ! Some other fields of interest include mobile app development, software development, AI/bots, networking, security and game development. </p>
                                     </div>
-                                    <!-- end row -->
-                <hr>
-                <!-- begin services -->
-                <h3>Services</h3>
-                <!-- begin row -->
-                <div class="row">
-                    <!-- begin col-3 -->
-                    <div class="col-services col-md-4 col-sm-4 col-xs-4">
-                        <div class="service service-vertical">
-                            <div class="icon bg-theme" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-code"></i></div>
-                            <div class="info">
-                                <h4 class="title">Re-usable Code</h4>
-                                <p class="desc">Aenean et elementum dui. Aenean massa enim, suscipit ut molestie quis, pretium sed orci. Ut faucibus egestas mattis.</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 flexcenter">
+                                        <a><i class="fa fa-github fa-2x"></i></a>
+                                        <a><i class="fa fa-codepen fa-2x"></i></a>               
+                                        <a><i class="fa fa-youtube-play fa-2x"></i></a> 
+                                        <a><i class="fa fa-linkedin fa-2x"></i></a>                 
+                                    </div>
+                                </div>                                  
                             </div>
                         </div>
                     </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-services col-md-4 col-sm-4 col-xs-4">
-                        <div class="service service-vertical">
-                            <div class="icon bg-theme" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-paint-brush"></i></div>
-                            <div class="info">
-                                <h4 class="title">Clean Design and Code</h4>
-                                <p class="desc">Etiam nulla turpis, gravida et orci ac, viverra commodo ipsum. Donec nec mauris faucibus, congue nisi sit amet, lobortis arcu.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-services col-md-4 col-sm-4 col-xs-4">
-                        <div class="service service-vertical">
-                            <div class="icon bg-theme" data-animation="true" data-animation-type="bounceIn"><i class="fa fa-file"></i></div>
-                            <div class="info">
-                                <h4 class="title">Well Documented</h4>
-                                <p class="desc">Ut vel laoreet tortor. Donec venenatis ex velit, eget bibendum purus accumsan cursus. Curabitur pulvinar iaculis diam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col-3 -->
-                </div>
-                <!-- end row -->
 
-                <hr>
-
-                 <!-- begin col-4 -->
-                    <div class="row">
-                        <h3>Technologies used</h3>                           
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://en.wikipedia.org/wiki/HTML5"><img src="assets/img/html5.png" alt="Html5"></a>
+                    <div class="tab-pane fade" id="tab-2">
+                        <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                            <h2>Projects</h2>
+                            <!-- Projects row -->
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(1,'proj')" on-release="hidedesc(1,'proj')" onmouseover="showdesc(1,'proj')" onmouseout="hidedesc(1,'proj')">
+                                        <div class="image">
+                                            <a><img src="assets/img/tictactoe.png" alt="tictactoe"></a>
+                                        </div>
+                                        <div id="proj1" class="desc">
+                                            <a href="http://codepen.io/toddkao/pen/EZzZzK?editors=0110" target="_blank" class="desc-title">Tic Tac Toe</a>
+                                            <span class="desc-text"> Tic Tac Toe made with React (My first React app) I followed React's Tutorial page and added a reset game button</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(2,'proj')" on-release="hidedesc(2,'proj')" onmouseover="showdesc(2,'proj')" onmouseout="hidedesc(2,'proj')">
+                                        <div class="image">
+                                            <a href="#"><img src="assets/img/empty.png" alt=""></a>
+                                        </div>
+                                        <div id="proj2" class="desc">
+                                            <span class="desc-title">Quisque at pulvinar lacus</span>
+                                            <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(3,'proj')" on-release="hidedesc(3,'proj')" onmouseover="showdesc(3,'proj')" onmouseout="hidedesc(3,'proj')" >
+                                        <div class="image">
+                                            <a href="#"><img src="assets/img/empty.png" alt=""></a>
+                                        </div>
+                                        <div id="proj3" class="desc">
+                                            <span class="desc-title">Vestibulum et erat ornare</span>
+                                            <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(4,'proj')" on-release="hidedesc(4,'proj')" onmouseover="showdesc(4,'proj')" onmouseout="hidedesc(4,'proj')">
+                                        <div class="image">
+                                            <a href="#"><img src="assets/img/empty.png" alt=""></a>
+                                        </div>
+                                        <div id="proj4" class="desc">
+                                            <span class="desc-title">Sed vitae mollis magna</span>
+                                            <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="assets/img/js.png" alt="Javascript"></a>
+                            <!-- Technologies -->
+                            <div class="row" style="margin-top: 50px">
+                                <h2>Technologies used</h2>                           
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(1,'tech')" on-release="hidedesc(1,'tech')" onmouseover="showdesc(1,'tech')" onmouseout="hidedesc(1,'tech')" >
+                                        <div class="tech">
+                                            <img src="assets/img/html5.png" alt="Html5">
+                                        </div>
+                                        <div class="description"  id="tech1">HTML5</div>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://facebook.github.io/react/"><img src="assets/img/reactjs.png" alt="reactjs"></a>
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(2,'tech')" on-release="hidedesc(2,'tech')" onmouseover="showdesc(2,'tech')" onmouseout="hidedesc(2,'tech')" >
+                                        <div class="tech">
+                                            <a target="_blank"><img src="assets/img/js.png" alt="Javascript"></a>
+                                        </div>
+                                        <div class="description"  id="tech2">Javascript</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://getbootstrap.com"><img src="assets/img/bootstrap.png" alt="Bootstrap"></a>
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper"  on-touch="showdesc(3,'tech')" on-release="hidedesc(3,'tech')" onmouseover="showdesc(3,'tech')" onmouseout="hidedesc(3,'tech')">
+                                        <div class="tech">
+                                            <a  target="_blank"><img src="assets/img/reactjs.png" alt="reactjs"></a>
+                                        </div>
+                                        <div class="description"  id="tech3">React js</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://angularjs.org/"><img src="assets/img/angular.png" alt="Angular"></a>
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(4,'tech')" on-release="hidedesc(4,'tech')" onmouseover="showdesc(4,'tech')" onmouseout="hidedesc(4,'tech')">
+                                        <div class="tech">
+                                            <a target="_blank"><img src="assets/img/bootstrap.png" alt="Bootstrap"></a>
+                                        </div>
+                                        <div class="description"  id="tech4">Bootstrap</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://nodejs.org/en/"><img src="assets/img/node.png" alt="Node.js"></a>
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(5,'tech')" on-release="hidedesc(5,'tech')" onmouseover="showdesc(5,'tech')" onmouseout="hidedesc(5,'tech')">
+                                        <div class="tech">
+                                            <a target="_blank"><img src="assets/img/angular.png" alt="Angular"></a>
+                                        </div>
+                                        <div class="description"  id="tech5">Angular js</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://www.mysql.com/"><img src="assets/img/mysql.png" alt="MySQL"></a>
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(6,'tech')" on-release="hidedesc(6,'tech')" onmouseover="showdesc(6,'tech')" onmouseout="hidedesc(6,'tech')">
+                                        <div class="tech">
+                                            <a  target="_blank"><img src="assets/img/node.png" alt="Node.js"></a>
+                                        </div>
+                                        <div class="description"  id="tech6">Node js</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-cust col-sm-3 col-xs-3">                           
-                            <div class="img-wrapper">
-                                <div class="tech">
-                                    <a href="https://secure.php.net/"><img src="assets/img/php.png" alt="PHP"></a>
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(7,'tech')" on-release="hidedesc(7,'tech')" onmouseover="showdesc(7,'tech')" onmouseout="hidedesc(7,'tech')">
+                                        <div class="tech">
+                                            <a  target="_blank"><img src="assets/img/mysql.png" alt="MySQL"></a>
+                                        </div>
+                                        <div class="description"  id="tech7">MySQL</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end row -->
-                <br> 
-                
-            </div>
-            <!-- end container -->
+                                <div class="col-cust col-sm-3 col-xs-3">                           
+                                    <div class="img-wrapper" on-touch="showdesc(8,'tech')" on-release="hidedesc(8,'tech')" onmouseover="showdesc(8,'tech')" onmouseout="hidedesc(8,'tech')">
+                                        <div class="tech">
+                                            <a  target="_blank"><img src="assets/img/php.png" alt="PHP"></a>
+                                        </div>
+                                        <div class="description"  id="tech8">PHP</div>
+                                    </div>
+                                </div>  
+                            </div>                  
+                        </div> <!-- fadeindown -->
+                    </div> <!-- tab 2 -->
+                               
 
-        </div>
-                            </div>
-                            <!-- end tab-pane -->
-                            <!-- begin tab-pane -->
-                            <div class="tab-pane fade" id="tab-2">
-<div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
-                <h2 class="content-title"> Current projects</h2>
-                <p class="content-desc">
 
-                </p>
-                <!-- begin row -->
-                <div class="row row-space-10">
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-1.jpg" alt="Work 1"></a>
+                    <div class="tab-pane fade" id="tab-3">
+                        <div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
+                            <h2>Work</h2>
+                             <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(1,'work')" on-release="hidedesc(1,'work')" onmouseover="showdesc(1,'work')" onmouseout="hidedesc(1,'work')">
+                                        <div class="image">
+                                            <a><img src="assets/img/empty.png" alt="tictactoe"></a>
+                                        </div>
+                                        <div id="work1" class="desc">
+                                            <a href="" target="_blank" class="desc-title">Lorem ipsum</a>
+                                            <span class="desc-text"> lorem ipsum</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(2,'work')" on-release="hidedesc(2,'work')" onmouseover="showdesc(2,'work')" onmouseout="hidedesc(2,'work')">
+                                        <div class="image">
+                                            <a href="#"><img src="assets/img/empty.png" alt=""></a>
+                                        </div>
+                                        <div id="work2" class="desc">
+                                            <span class="desc-title">Quisque at pulvinar lacus</span>
+                                            <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(3,'work')" on-release="hidedesc(3,'work')" onmouseover="showdesc(3,'work')" onmouseout="hidedesc(3,'work')" >
+                                        <div class="image">
+                                            <a href="#"><img src="assets/img/empty.png" alt=""></a>
+                                        </div>
+                                        <div id="work3" class="desc">
+                                            <span class="desc-title">Vestibulum et erat ornare</span>
+                                            <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="work" on-touch="showdesc(4,'work')" on-release="hidedesc(4,'work')" onmouseover="showdesc(4,'work')" onmouseout="hidedesc(4,'work')">
+                                        <div class="image">
+                                            <a href="#"><img src="assets/img/empty.png" alt=""></a>
+                                        </div>
+                                        <div id="work4" class="desc">
+                                            <span class="desc-title">Sed vitae mollis magna</span>
+                                            <span class="desc-text">Lorem ipsum dolor sit amet</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="desc">
-                                <span class="desc-title">Aliquam molestie</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-3.jpg" alt="Work 3"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Quisque at pulvinar lacus</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-5.jpg" alt="Work 5"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Vestibulum et erat ornare</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-7.jpg" alt="Work 7"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Sed vitae mollis magna</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                </div>
-                <!-- end row -->
-                <!-- begin row -->
-                <div class="row row-space-10">
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-2.jpg" alt="Work 2"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Suspendisse at mattis odio</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-4.jpg" alt="Work 4"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Aliquam vitae commodo diam</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-6.jpg" alt="Work 6"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Phasellus eu vehicula lorem</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-8.jpg" alt="Work 8"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Morbi bibendum pellentesque</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                </div>
-                <!-- end row -->
-            </div>
-
-                            </div>
-                            <!-- end tab-pane -->
-                            <!-- begin tab-pane -->
-                            <div class="tab-pane fade" id="tab-3">
-<div class="fadeInDown contentAnimated" data-animation="true" data-animation-type="fadeInDown">
-                <h2 class="content-title">Our Latest Work</h2>
-                <p class="content-desc">
-
-                </p>
-                <!-- begin row -->
-                <div class="row row-space-10">
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-1.jpg" alt="Work 1"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Aliquam molestie</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-3.jpg" alt="Work 3"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Quisque at pulvinar lacus</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-5.jpg" alt="Work 5"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Vestibulum et erat ornare</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-7.jpg" alt="Work 7"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Sed vitae mollis magna</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                </div>
-                <!-- end row -->
-                <!-- begin row -->
-                <div class="row row-space-10">
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-2.jpg" alt="Work 2"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Suspendisse at mattis odio</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-4.jpg" alt="Work 4"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Aliquam vitae commodo diam</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-6.jpg" alt="Work 6"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Phasellus eu vehicula lorem</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                    <!-- begin col-3 -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- begin work -->
-                        <div class="work">
-                            <div class="image">
-                                <a href="#"><img src="assets/img/work-8.jpg" alt="Work 8"></a>
-                            </div>
-                            <div class="desc">
-                                <span class="desc-title">Morbi bibendum pellentesque</span>
-                                <span class="desc-text">Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <!-- end work -->
-                    </div>
-                    <!-- end col-3 -->
-                </div>
-                <!-- end row -->
-            </div>
-                            </div>
-                            <!-- end tab-pane -->
-
-                            <!-- begin tab-pane -->
-                            <div class="tab-pane fade" id="tab-4">
-                            </div>
-                            <!-- end tab-pane -->
-                        </div>
-                        <!-- end tab-content -->
-
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-      </div>
+                        </div><!-- fadeindown -->
+                    </div> <!-- tab-3 -->
+                </div><!-- end tab-content -->
+            </div><!-- end row -->                
+        </div> <!-- end container -->       
+    </div>
+    
 	<!-- ================== BEGIN BASE JS ================== -->
 	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
 	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
@@ -524,6 +265,15 @@
 	    $(document).ready(function() {
 	        App.init();
 	    });
+        function showdesc(index,type){
+        var string = "#"+ type + index;
+        $(string).addClass(" visible");
+        }
+        function hidedesc(index,type){
+        var string = "#"+ type + index;
+        $(string).removeClass(" visible");
+        }
 	</script>
+
 </body>
 </html>
