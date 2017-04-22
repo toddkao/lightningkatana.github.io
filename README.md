@@ -1,6 +1,4 @@
-# Todd Kao
-![alt text][logo]
-[logo]: https://graph.facebook.com/1078520008/picture?type=large "facebook graph api my profile picture"
+# Todd Kao Portfolio website
 
 ### Completed
 -------
