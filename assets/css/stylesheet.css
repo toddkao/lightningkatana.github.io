@@ -1,5 +1,12 @@
-a.btn.btn-primary{
+a.btn.btn-primary,a.btn.btn-info{
 	text-align:center;
 	width:100%;
 	padding:0px 0px;
+	margin-bottom:4px;
+}
+
+@media only screen and (max-width: 330px){
+	.desc-text{
+		display:none !important;
+	}
 }
