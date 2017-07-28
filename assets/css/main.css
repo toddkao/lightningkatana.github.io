@@ -145,7 +145,7 @@ textarea {
     width:100px;
     display:block;
     margin: 0 auto;
-    border-radius:20%; 
+    border-radius:2px; 
 }
 .profile > p{ 
 max-width:400px;
