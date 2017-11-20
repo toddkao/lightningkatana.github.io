@@ -39,7 +39,7 @@ export default {
         },
         {
           name: 'CV',
-          link: 'http://google.com',
+          link: '../static/resume/toddkao.pdf',
           icon: 'fa-file-text'
         }
       ]

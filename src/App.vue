@@ -11,11 +11,6 @@ export default {
   name: 'app',
   components: {
     navbar
-  },
-  computed: {
-    background () {
-      return require('@/assets/images/black.jpg')
-    }
   }
 }
 </script>
