@@ -18,7 +18,7 @@
   justify-content:center;
 }
 .body {
-  height:80%;
+  height:80vh;
   max-height:100vh;
   max-width:80vw;
   margin: 0 auto;
