@@ -8,34 +8,31 @@
           <i style="color:white" class="fa fa-circle"></i>
         </span>
       </div>
-      <template v-for="(item, index) in items">
-        <template v-if="showingOverlay">
-          <div :class="{'lg-block': showing === index}" v-if="showing === index || showing === null" class="overlay block">
-            <div>
-              {{ item.name }}
-            </div>
-              <div>
-                <button v-if="showing === null" @click="showDetails(index)" class="button btn details">
-                  {{ item.details}}
-                </button>
-                <button v-else @click="goBack()" class="button btn details">
-                  Back to gallery
-                </button>
-                <a v-if="showing === index" :href="item.link" target="_blank" class="button btn codepen">
-                  {{ item.linkTitle }}
-                </a>
-              </div>
-          </div>
-        </template>
-        <div :class="{'lg-block': showingSize === index}" v-if="showing === index || showing === null" class="block" :style="{backgroundImage : 'url(' + item.image + ')'}">
+      <el-dialog
+        style="min-width:50%"
+        :title="selectedItem.name"
+        :visible.sync="dialogVisible"
+        width="50%">
+        <span> {{ selectedItem.description }}</span>
+        <div style="width:100%">
+          <img :src="selectedItem.image" style="width: 500px;max-width: 100%;">
         </div>
-        <div v-if="showing === index">
-          <i @click="prevItem(index)" class="fa-social fa fa-4x fa-chevron-circle-left" aria-hidden="true"></i>
-          <i @click="nextItem(index)" class="fa-social fa fa-4x fa-chevron-circle-right" aria-hidden="true"></i>
+        <a v-if="selectedItem.link" :href="selectedItem.link" target="_blank" class="button btn codepen">
+          {{ selectedItem.linkTitle }}
+        </a>
+        <img style="margin: 10px" v-for="url in selectedItem.tags" :src="url">
+        
+        <span slot="footer" class="dialog-footer">
+          <!-- <el-button @click="dialogVisible = false">Cancel</el-button>
+          <el-button type="primary" @click="dialogVisible = false">Confirm</el-button> -->
+        </span>
+      </el-dialog>
+      <el-carousel arrow="always" indicator-position="none" :interval="4000" type="card" width="30vw" height="200px">
+        <el-carousel-item v-for="(item, index) in items" :key="item">
+          <div @click="setModal(item)" :class="{'lg-block': showingSize === index}" v-if="showing === index || showing === null" class="block" :style="{backgroundImage : 'url(' + item.image + ')'}">
         </div>
-        <div style="font-size: 22px;" v-if="showing === index"> {{ item.description }} </div>
-        <img style="margin: 10px" v-if="showing === index" v-for="url in item.tags" :src="url">
-      </template>
+        </el-carousel-item>
+      </el-carousel>
       </div>
 
         <i class="fa-social fa fa-4x fa-github" aria-hidden="true"></i>
@@ -50,6 +47,8 @@ export default {
   name: 'Home',
   data () {
     return {
+      dialogVisible: false,
+      selectedItem: [],
       showing: null,
       showingSize: null,
       showingOverlay: true,
@@ -96,6 +95,11 @@ export default {
     }
   },
   methods: {
+    setModal (item) {
+      this.selectedItem = item
+      console.log(item)
+      this.dialogVisible = true
+    },
     showDetails (index) {
       // this.items.
       this.showing = index
