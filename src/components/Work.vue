@@ -60,7 +60,7 @@ export default {
         {
           name: 'Pita pit',
           details: 'View Details',
-          image: require('@/assets/images/pitapit.png'),
+          image: require('@/assets/images/pitapit/pitapit.png'),
           description: 'Pita pit online ordering website',
           tags: [
             'https://img.shields.io/badge/Node.js-v6.11.2-brightgreen.svg',
@@ -69,11 +69,82 @@ export default {
             'https://img.shields.io/badge/Babel-v6.23.0-brightgreen.svg'
           ],
           screenshots: [
-            require('@/assets/images/pitapit.png'),
-            require('@/assets/images/pitapitmap.png'),
-            require('@/assets/images/pitapitmenu.png'),
-            require('@/assets/images/pitapittopping.png'),
-            require('@/assets/images/pitapitprofile.png')
+            require('@/assets/images/pitapit/pitapit.png'),
+            require('@/assets/images/pitapit/pitapitmap.png'),
+            require('@/assets/images/pitapit/pitapitmenu.png'),
+            require('@/assets/images/pitapit/pitapittopping.png'),
+            require('@/assets/images/pitapit/pitapitprofile.png')
+          ]
+        },
+        {
+          name: 'Ginos Pizza',
+          details: 'View Details',
+          image: require('@/assets/images/ginospizza/ginos1.png'),
+          description: 'Ginos Pizza online ordering website',
+          tags: [
+            'https://img.shields.io/badge/Node.js-v6.11.2-brightgreen.svg',
+            'https://img.shields.io/badge/Vue.js-v3.4.10-brightgreen.svg',
+            'https://img.shields.io/badge/Express-v4.16.2-brightgreen.svg',
+            'https://img.shields.io/badge/Babel-v6.23.0-brightgreen.svg'
+          ],
+          screenshots: [
+            require('@/assets/images/ginospizza/ginos1.png'),
+            require('@/assets/images/ginospizza/ginos2.png'),
+            require('@/assets/images/ginospizza/ginos3.png'),
+            require('@/assets/images/ginospizza/ginos4.png'),
+            require('@/assets/images/ginospizza/ginos5.png')
+          ]
+        },
+        {
+          name: 'Williams Cafe',
+          details: 'View Details',
+          image: require('@/assets/images/superfresh/superfresh.png'),
+          description: 'Williams Cafe digital signage with real time content updates',
+          tags: [
+            'https://img.shields.io/badge/Node.js-v6.11.2-brightgreen.svg',
+            'https://img.shields.io/badge/Vue.js-v3.4.10-brightgreen.svg',
+            'https://img.shields.io/badge/Express-v4.16.2-brightgreen.svg',
+            'https://img.shields.io/badge/Babel-v6.23.0-brightgreen.svg'
+          ],
+          screenshots: [
+            require('@/assets/images/superfresh/superfresh.png'),
+            require('@/assets/images/superfresh/superfresh2.png'),
+            require('@/assets/images/superfresh/superfresh3.png')
+          ]
+        },
+        {
+          name: 'Waxon',
+          details: 'View Details',
+          image: require('@/assets/images/waxon/waxon1.png'),
+          description: 'Waxon frahchise inventory management system',
+          tags: [
+            'https://img.shields.io/badge/Node.js-v6.11.2-brightgreen.svg',
+            'https://img.shields.io/badge/Vue.js-v3.4.10-brightgreen.svg',
+            'https://img.shields.io/badge/Express-v4.16.2-brightgreen.svg',
+            'https://img.shields.io/badge/Babel-v6.23.0-brightgreen.svg'
+          ],
+          screenshots: [
+            require('@/assets/images/waxon/waxon1.png'),
+            require('@/assets/images/waxon/waxon2.png'),
+            require('@/assets/images/waxon/waxon3.png'),
+            require('@/assets/images/waxon/waxon4.png'),
+            require('@/assets/images/waxon/waxon5.png'),
+            require('@/assets/images/waxon/waxon6.png')
+          ]
+        },
+        {
+          name: 'Osmows',
+          details: 'View Details',
+          image: require('@/assets/images/osmows/osmows1.png'),
+          description: 'Osmows updated website in development',
+          tags: [
+            'https://img.shields.io/badge/Node.js-v6.11.2-brightgreen.svg',
+            'https://img.shields.io/badge/Vue.js-v3.4.10-brightgreen.svg',
+            'https://img.shields.io/badge/Express-v4.16.2-brightgreen.svg',
+            'https://img.shields.io/badge/Babel-v6.23.0-brightgreen.svg'
+          ],
+          screenshots: [
+            require('@/assets/images/osmows/osmows1.png')
           ]
         }
       ]
