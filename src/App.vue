@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <navbar></navbar>
-    <router-view/>
+    <router-view> </router-view>
   </div>
 </template>
 
 <script>
-import navbar from '@/modules/navbar'
 export default {
   name: 'app',
-  components: {
-    navbar
-  },
   computed: {
     background () {
       return require('@/assets/images/black.jpg')
@@ -22,7 +17,7 @@ export default {
 
 <style>
 #app {
-  background-color: #2980b9;
+  /* background-color: #2980b9; */
   display:table;
   align-items:center;
   justify-content:center;
