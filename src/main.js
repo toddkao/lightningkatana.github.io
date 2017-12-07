@@ -5,8 +5,11 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
-
+import Vuetify from 'vuetify'
 import 'element-ui/lib/theme-chalk/index.css'
+import('../node_modules/vuetify/dist/vuetify.min.css')
+
+Vue.use(Vuetify)
 Vue.use(ElementUI, { locale })
 require('@/assets/style/style.css')
 Vue.config.productionTip = false
