@@ -1,3 +1,4 @@
+
 .toolbar > span > i {
   margin: 2px;
 }
@@ -53,7 +54,7 @@ i {
   width: 80vw;
   max-width: 100%;
 }
-.button {
+/* .button {
   width: 80%;
   border-radius: 4px !important;
   margin: 10px;
@@ -61,7 +62,7 @@ i {
 }
 .button:hover {
   opacity: 0.8;
-}
+} */
 .details {
   background-color: #3498db;
 }
