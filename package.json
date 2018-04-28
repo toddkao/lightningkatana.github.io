@@ -13,11 +13,7 @@
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
-    "cname": "nope.org",
-    "prep": [
-      "build-sass",
-      "optimize-img"
-    ],
+    "cname": "toddkao.com",
     "commit": "",
     "post": [
       "clean-source"
