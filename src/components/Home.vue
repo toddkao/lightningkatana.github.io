@@ -96,11 +96,19 @@ export default {
         responsive: [
           {
             breakpoint: 768,
-            options: {maxParticles: 50}
+            options: {
+              maxParticles: 50,
+              color: ['#1abc9c', '#404B69', '#6c5ce7'],
+              connectParticles: false
+            }
           },
           {
             breakpoint: 320,
-            options: {maxParticles: 0}
+            options: {
+              maxParticles: 0,
+              color: ['#1abc9c', '#404B69', '#6c5ce7'],
+              connectParticles: false
+            }
           }
         ]
       })
