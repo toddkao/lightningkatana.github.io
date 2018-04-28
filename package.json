@@ -8,7 +8,21 @@
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "deploy": "gh-pages-deploy -- 'deploying to gh-pages with gh-pages-deploy'"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "nope.org",
+    "prep": [
+      "build-sass",
+      "optimize-img"
+    ],
+    "commit": "",
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
   },
   "dependencies": {
     "animejs": "^2.2.0",
