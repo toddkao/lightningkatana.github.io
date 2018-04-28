@@ -11,16 +11,17 @@
           </div>
           <vue-typer v-if="getTyped" class="typer" :text="titles"></vue-typer>
         </div>
-        <p class="transition">I'm currently working with the <a href="https://vuejs.org/" target="_blank"> Vue.js Framework </a> to create SPA/Web Apps for my company and our various clients.
-        I'm always looking for opportunities to learn more about web, software development, mobile app development, database systems, AI and other computer/system/network related technologies.  
+        <p class="transition">I'm currently working with the <a href="https://vuejs.org/" target="_blank"> Vue.js Framework </a> to create SPA/Web Apps.
+        I'm always looking for opportunities to learn more about web, software development, mobile app development, database systems, AI and other computer/system/network related technologies.
         </p>
-        <p>I am experienced with <a href="http://www.codereadability.com/what-are-javascript-linters/" target="_blank"> JSLint</a>,
+        <p>I am experienced with <a href="https://vuejs.org/" target="_blank"> Vue.js</a>,
+          <a href="http://www.codereadability.com/what-are-javascript-linters/" target="_blank"> JSLint</a>,
           <a href="http://es6-features.org/#Constants" target="_blank">ES6</a>,
           <a href="https://git-scm.com/" target="_blank">git/git-cli</a>,
           <a href="https://trello.com/" target="_blank">trello</a>/<a href="https://www.atlassian.com/software/jira" target="_blank">jira</a>,
           centralized state management <a href="https://vuex.vuejs.org/en/intro.html" target="_blank">(Vuex)</a>,
-          <a href="https://hackernoon.com/functional-programming-paradigms-in-modern-javascript-pure-functions-797d9abbee1" target="_blank">functional javascript</a>,
-          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsive design </a>
+          <a href="https://hackernoon.com/functional-programming-paradigms-in-modern-javascript-pure-functions-797d9abbee1" target="_blank">functional javascript</a>
+          <!-- <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsive design </a> -->
         </p>
         <div class="flex-center social">
           <a href="https://github.com/toddkao" target="_blank"><i class="fa fa-github fa-3x hover" aria-hidden="true"/></a>
@@ -28,7 +29,7 @@
         </div>
         <div>
           <div class="small">vuex + persisted state is used so the initial animation isn't repeated each time you refresh the page,
-            <a @click.stop.prevent="init(true)" href="">click here </a>if you would like to see it again </div>
+            <a @click.stop.prevent="init(true)" href="">click here </a>if you would like to see it again. </div>
         </div>
       </div>
     </el-card>
@@ -90,16 +91,16 @@ export default {
       Particles.init({
         selector: '.bg',
         color: ['#1abc9c', '#404B69', '#6c5ce7'],
-        maxParticles: 200,
+        maxParticles: 100,
         connectParticles: true,
         responsive: [
           {
             breakpoint: 768,
-            options: {maxParticles: 100}
+            options: {maxParticles: 50}
           },
           {
             breakpoint: 320,
-            options: {maxParticles: 50}
+            options: {maxParticles: 0}
           }
         ]
       })
@@ -183,7 +184,7 @@ html, body {
 }
 .el-card {
   position: relative;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .el-card img {
   width:100%;
