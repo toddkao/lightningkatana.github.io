@@ -9,3 +9,9 @@ export default {
   name: 'app'
 }
 </script>
+
+<style scoped>
+#app {
+  overflow: auto;
+}
+</style>
