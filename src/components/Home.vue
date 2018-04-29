@@ -51,6 +51,7 @@ export default {
     VueTyper
   },
   mounted () {
+    this.initBg()
     this.init()
   },
   data: () => ({
@@ -78,6 +79,12 @@ export default {
     ]),
     init (reset = false) {
       if (reset === true) this.clearTyped()
+      if (this.getTyped === false) {
+        $('.main-card').css({'max-height': '34px'})
+        $('.transition').css({opacity: 0.5})
+      }
+    },
+    initBg () {
       Particles.init({
         selector: '.bg',
         color: ['#1abc9c', '#404B69', '#6c5ce7'],
@@ -102,10 +109,6 @@ export default {
           }
         ]
       })
-      if (this.getTyped === false) {
-        $('.main-card').css({'max-height': '34px'})
-        $('.transition').css({opacity: 0.5})
-      }
       anime({
         targets: '.bg',
         opacity: 1,
