@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="body">
   <div v-cloak class="content">
-    <el-card :body-style="cardStyle" class="main-card">
+    <div class="main-card">
       <vue-typer v-if="!getTyped" class="typer" :text="typed" :repeat="0" @completed='doneTyping'></vue-typer>
       <div v-show="getTyped">
         <div class="title transition">
@@ -32,7 +32,7 @@
             <a @click.stop.prevent="init(true)" href="">click here </a>if you would like to see it again. </div>
         </div>
       </div>
-    </el-card>
+    </div>
   </div>
   <canvas class="bg"/>
 </div>
@@ -54,16 +54,6 @@ export default {
     this.init()
   },
   data: () => ({
-    cardStyle: {
-      'display': 'flex',
-      'justify-content': 'center',
-      'align-items': 'center',
-      'padding': '20px',
-      'max-width': '85vw',
-      'width': '500px',
-      'flex-direction': 'column',
-      'transition-duration': '10s'
-    },
     typed: [
       `Hi, I'm Todd Kao`,
       `I'm a web developer from Toronto`
@@ -99,7 +89,7 @@ export default {
             options: {
               maxParticles: 50,
               color: ['#1abc9c', '#404B69', '#6c5ce7'],
-              connectParticles: false
+              connectParticles: true
             }
           },
           {
@@ -142,6 +132,32 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@media screen and (min-height: 550px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .typer {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 13px !important;
+  }
+  .title {
+    font-size: 18px !important;
+  }
+  .small {
+    font-size: 10px !important;
+  }
+}
+body {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
 .hover:hover {
   cursor:pointer;
   opacity:0.5;
@@ -186,6 +202,7 @@ export default {
   font-weight: bold;
 }
 html, body {
+  overflow:hidden;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -203,17 +220,35 @@ html, body {
   display: block;
   top: 0;
   left: 0;
+  height: 100vh!important;
   z-index: -1;
   opacity: 0;
 }
 
+.main-card {
+  border-radius: 4px;
+  border: 1px solid #e6ebf5;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  color: #2d2f33;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 20px;
+  max-width: 85vw;
+  width:500px;
+  flex-direction: column;
+  transition-duration: 1s;
+  opacity: 0.8;
+}
 .content {
-  width:100vw;
+  margin-top:5px;
+  margin-bottom:5px;
+  height: 100%;
+}
+.body {
   height: 100vh;
-  position:absolute;
-  top:0;
-  left:0;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
