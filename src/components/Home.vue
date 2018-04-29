@@ -103,7 +103,7 @@ export default {
         ]
       })
       if (this.getTyped === false) {
-        this.cardStyle['max-height'] = '34px'
+        $('.main-card').css({'max-height': '34px'})
         $('.transition').css({opacity: 0.5})
       }
       anime({
@@ -116,7 +116,7 @@ export default {
     doneTyping () {
       setTimeout(() => {
         this.setTyped(true)
-        $('.main-card .el-card__body').addClass('autoHeight')
+        $('.main-card').addClass('autoHeight')
         anime({
           targets: '.transition',
           opacity: 1,
@@ -238,7 +238,6 @@ html, body {
   max-width: 85vw;
   width:500px;
   flex-direction: column;
-  transition-duration: 1s;
   opacity: 0.8;
 }
 .content {
