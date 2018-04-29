@@ -241,8 +241,6 @@ html, body {
   opacity: 0.8;
 }
 .content {
-  margin-top:5px;
-  margin-bottom:5px;
   height: 100%;
 }
 .body {
