@@ -89,7 +89,7 @@ export default {
             options: {
               maxParticles: 50,
               color: ['#1abc9c', '#404B69', '#6c5ce7'],
-              connectParticles: true
+              connectParticles: false
             }
           },
           {
