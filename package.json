@@ -14,7 +14,7 @@
   "dependencies": {
     "animejs": "^2.2.0",
     "element-ui": "^2.0.7",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "particles.js": "^2.0.0",
     "particlesjs": "^2.2.2",
     "vue": "^2.5.2",
