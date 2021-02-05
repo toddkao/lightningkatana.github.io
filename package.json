@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "gh-pages -d dist"
+    "deploy": "node build/build.js && gh-pages -d dist"
   },
   "dependencies": {
     "animejs": "^2.2.0",
